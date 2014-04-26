@@ -1,0 +1,25 @@
+.rake_test_cache
+
+###
+# Ignore Chef key files and secrets
+###
+.chef/*.pem
+.chef/encrypted_data_bag_secret
+.idea
+.cache
+.cache/*
+.idea/*
+.vagrant
+.vagrant/*
+*.swp
+
+.DS_Store
+CACHE/*
+.idea
+.idea/*
+*.log
+*.pot
+*.pyc
+
+Berksfile.lock
+vagrant_dev_settings.yml

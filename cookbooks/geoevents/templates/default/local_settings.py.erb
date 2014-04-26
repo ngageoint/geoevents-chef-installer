@@ -1,0 +1,14 @@
+DEBUG = <%= node['geoevents']['debug'] ? "True":"False" %>
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.contrib.gis.db.backends.postgis',
+        'NAME': '<%= @database[:name] %>',
+        'USER': '<%= @database[:user] %>',
+        'PASSWORD': '<%= @database[:password] %>',
+        'HOST': '<%= @database[:host] %>',
+        'PORT': '<%= @database[:port] %>',
+        }
+    }
+
+STATIC_ROOT = '<%= node['geoevents']['settings']['static_root'] %>'
+STATIC_URL = '<%= node['geoevents']['settings']['static_url'] %>'
