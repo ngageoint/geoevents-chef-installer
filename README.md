@@ -1,4 +1,4 @@
-Overview
+GeoEvents Chef Installer
 ========
 
 This is a set of Chef recipes (think of them as macros to automatically build a running Virtual Machine) that will work to set the
